@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ <title>For You 💗</title>
+
+ <style>
+   body {
+     margin: 0;
+     padding: 0;
+     background: linear-gradient(to bottom right, #ffb6d9, #ffcce6);
+     font-family: Arial, sans-serif;
+     color: white;
+     text-align: center;
+   }
+
+   .container {
+     padding-top: 120px;
+   }
+
+   h1 {
+     font-size: 55px;
+     margin-bottom: 20px;
+   }
+
+   p {
+     font-size: 22px;
+     width: 70%;
+     margin: auto;
+     line-height: 1.6;
+   }
+button {
+     margin-top: 40px;
+     padding: 15px 30px;
+     font-size: 18px;
+     border: none;
+     border-radius: 30px;
+     background-color: white;
+     color: #ff4f9a;
+     cursor: pointer;
+     transition: 0.3s;
+   }
+
+   button:hover {
+     background-color: #ffe6f2;
+     transform: scale(1.05);
+   }
+ </style>
+</head>
+
+<body>
+
+ <div class="container">
+
+   <h1>Hey Handsome 💗</h1>
+
+   <p>
+     Hey handsome, I made this website so when you're bored
+     you can check this out and not be bored anymore 💗
+   </p>
+
+   <button onclick="showMessage()">
+     Click Me
+   </button>
+
+ </div>
+
+ <script>
+   function showMessage() {
+     alert("You’re cute :) 💗");
+   }
+ </script>
+
+</body>
+</html>
+
+
+<button onclick="generateChallenge()">
+  Give Me A Challenge
+</button>
+<p id="challenge"></p>
+<script>
+const challenges = [
+  "Do 10 jumping jacks",
+  "Send me a random selfie",
+  "Drink a glass of water",
+  "Touch grass for 30 seconds",
+  "Tell me your favorite memory of us",
+  "Listen to a random song and rate it",
+  "Do your best dance move",
+  "Find the weirdest object in your room",
+  "Text me the 3rd photo in your camera roll",
+  "Compliment yourself right now"
+];
+function generateChallenge() {
+  const random =
+    challenges[Math.floor(Math.random() * challenges.length)];
+  document.getElementById("challenge").innerText = random;
+}
+</script> 
+
+<h2>🌤 Daily Checklist</h2>
+<label><input type="checkbox"> Drink Water 💧</label><br>
+<label><input type="checkbox"> Eat Food 🍔</label><br>
+<label><input type="checkbox"> Text Meeee 💌</label><br>
+<label><input type="checkbox"> Go Outside 🌱</label><br>
+<label><input type="checkbox"> Stretch 🧘</label><br>
+<label><input type="checkbox"> Listen to Music 🎧</label><br>
+<label><input type="checkbox"> Take a Deep Breath 🌸</label><br>
+<label><input type="checkbox"> Get Some Sleep 😴</label><br>
+<style>
+body {
+  font-family: Arial, sans-serif;
+}
+label {
+  display: block;
+  margin: 10px 0;
+  font-size: 18px;
+}
+input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.3);
+}
+</style>
+
